@@ -45,7 +45,7 @@ Session session= sessionFactory.openSession();
 		
 Transaction tx=session.beginTransaction();
 		
-tx.begin();
+//tx.begin();
 		
 session.save(r);
 		

@@ -16,10 +16,11 @@ public class Register
 {
 
 	
+
+
+//@Column(columnDefinition="varchar(30)" )
+
 @Id
-
-
-@Column(columnDefinition="varchar(30)" )
 private String username;
 
 @Column(columnDefinition="long(10)")

@@ -173,7 +173,7 @@ return mv;
 }
 	
 	
-/*@RequestMapping(value="/FullProduct",method=RequestMethod.GET)
+@RequestMapping(value="/FullProduct",method=RequestMethod.GET)
 	
 public String userview(Model m)
 	
@@ -216,7 +216,7 @@ return mv;
 	//System.out.println(getdata());
 		
 	
-}*/
+}
 	
 
 	

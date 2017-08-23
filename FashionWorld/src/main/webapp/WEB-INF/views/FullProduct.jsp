@@ -1,59 +1,53 @@
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
-
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+
 <script>
-  var prod = ${list};
-  
-  angular.module('showProduct',[]).controller('ProductController', function($scope)
-   {
-          $scope.Product=prod;
-       
-   
-          $scope.sort = function(keyname)
-          {
-              $scope.sortKey = keyname;   //set the sortKey to the param passed
-              $scope.reverse = !$scope.reverse; //if true make it false and vice versa
-          }
-              
-    });
+	var prod = ${list};
+	angular.module('ViewProduct', []).controller('ProductController',function($scope) 
+		{
+				$scope.Product = prod;
+				$scope.sort = function(keyname) 
+				{
+					$scope.sortKey = keyname; //set the sortKey to the param passed
+					$scope.reverse = !$scope.reverse; //if true make it false and vice versa
+				}
+		});
 </script>
-<jsp:include page="Admin.jsp"></jsp:include>
-<!-- <body background=" resources/admin1.jpg">-->
-  <div class="container">
-  <form:form action="AddProduct" method="POST" commandName="Product">
-<div class="span12" style="text-align: justify; font-size: large; color:silver;">
- <div ng-app="showProduct" ng-controller="ProductController">
- <br/><br/>
-Search:<input type=text placeholder="Search" ng-model="searchText"/>
-<div id="headin2"><strong> <h3 align="center">Product List </h3></strong></div>
-<div align="center">
-<table bgcolor="#00FF00" width=\"100%\" border=\"0\" id=\"tab\" >
-<tr>         <th bgcolor="white" id=\"td1\">PRODUCT ID</th>
-			 <th bgcolor="white" id=\"td2\">PRODUCT NAME</th>
-             <th id=\"td3\" bgcolor="white">PRODUT DESC</th>
-             <th bgcolor="white" id=\"td6\">PRODUCT IMAGE</th>
-             <th bgcolor="white" id=\"td7\">PRODUCT QUANTITY</th>
-             <th bgcolor="white" id=\"td8\">PRODUCT PRICE</th>
-             <th bgcolor="white" id=\"td9\">EDIT</th>
-             <th bgcolor="white" id=\"td10\">DELETE</th>
- </tr>
- <tr class="success" ng-repeat="prod in Product|filter:searchText">
+</br></br>
+<body>
+<div class="bg-content">
+<form:form commandName="Product">
+	
 
- 	<td bgcolor="white">{{prod.pid}}</td>
- 	<td bgcolor="white">{{prod.pname}}</td>
- 	<td bgcolor="white">{{prod.pdesc}}</td>
- 
- 	<!-- <td bgcolor="white"><img src="resources/{{prod.pid}}.jpg" height="40" width="40" align="middle"/></td>-->
- <td bgcolor="white"><img src="resources/images/{{prod.pid}}.jpg" height="30" width="30" align="middle"></img></td>
- 	
-    <td bgcolor="white">{{prod.pquan}}</td><td bgcolor="white">{{prod.pcost}}</td>
- 	<td bgcolor="white"><a href="EditProduct?id={{pid=prod.pid}}">Edit</a></td>
- 	<td bgcolor="white"><a href="delProduct?id={{pid=prod.pid}}">Delete</a></td>
- 
- </tr>
- </table>
- </div>
- </div>
- </div>
- </form:form>
-
+	<div class="container">
+	<div class="row">
+    <div class="col-lg-12">
+    <div ng-app="ViewProduct" ng-controller="ProductController">
+	<div  class ng-repeat="prod in Product">
+	<div class="col-lg-3 col-md-4 col-xs-6 thumb">
+      <a class="thumbnail"  href="ProductDescription?id={{prod.pid}}">
+        <p>{{prod.pname}}</p> 
+  <img class="img-responsive" src="resources/images/{{prod.pid}}.jpg" style="width: 150px; height: 170px"/>
+  <p >Rs.{{prod.pcost}}</p>
+      </a>
+      </div>
+      </div>
+      </div>
+   </div>
+   </div>
+   </div>
+   
+   	
+   </form:form>
+   </div>    
+		
+		</body>
+		</html>

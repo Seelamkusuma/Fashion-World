@@ -10,6 +10,7 @@
 <div align="right">
  <h1> <a href ="AddProduct">AddProduct</a> </h1>
           <h1><a href ="ViewProduct">ViewProduct</a> </h1> <html>
+          <h1><a href ="FullProduct">FullProduct</a> </h1> <html>
           
           </html>
          </div>
