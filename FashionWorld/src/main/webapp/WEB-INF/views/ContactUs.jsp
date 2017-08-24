@@ -14,7 +14,8 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
-<div class="jumbotron text-center">
+<div class="jumbotron text-center" style="background-color:cyan">
+</head>
 <h1> FashionWorld</h1>
 <h2> Contact Us</h2>
 <p>For any type of suggestion,question,complaint or something that u think is missing with us </p>

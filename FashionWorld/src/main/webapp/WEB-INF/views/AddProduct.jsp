@@ -17,7 +17,7 @@
 </head>
 
 <body>
-  
+  <div class="jumbotron text-center">
 <h1> Add Product Form</h1>
 
 <form:form action="AddProduct" method="post" modelAttribute="prdt" enctype="multipart/form-data" >

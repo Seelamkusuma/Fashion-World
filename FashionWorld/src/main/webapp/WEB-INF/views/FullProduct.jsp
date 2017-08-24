@@ -22,7 +22,7 @@
 		});
 </script>
 </br></br>
-<body>
+<body style="background-color:black">
 <div class="bg-content">
 <form:form commandName="Product">
 	

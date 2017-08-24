@@ -6,7 +6,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>FashionWorld</title>
 </head>
-<body>
+<body style="background-color:black">
 <div align="right">
  <h1> <a href ="AddProduct">AddProduct</a> </h1>
           <h1><a href ="ViewProduct">ViewProduct</a> </h1> <html>

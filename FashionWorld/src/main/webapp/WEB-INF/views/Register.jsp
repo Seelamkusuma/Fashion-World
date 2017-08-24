@@ -16,8 +16,8 @@
   <script src="https://use.fontawesome.com/9c842829ac.js"></script>
 </head>
 
-<body>
-  
+ <body>
+ <div class="jumbotron text-center" style="background-color:cyan">
 <h1> Registration Form</h1>
 
 <form:form action="saveRegister" method="post" commandName="Register"  >
@@ -52,6 +52,7 @@
 			</table>
 			
 			<input type="submit" value="Submit" />
+			
 </form:form>
 
 </body>
