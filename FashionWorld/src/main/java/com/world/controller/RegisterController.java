@@ -19,6 +19,7 @@ import org.springframework.web.servlet.ModelAndView;
 import com.google.gson.Gson;
 import com.world.DAO.ProductDAO;
 import com.world.DAO.RegisterDAO;
+import com.world.model.Cart;
 import com.world.model.Register;
 
 @Controller
@@ -83,9 +84,9 @@ String jsonInString=gson.toJson(list);
 		    	
  model.addAttribute("list",jsonInString);
 		    	 
-//ArrayList<Cart> cartitem=new ArrayList<Cart>();
+ArrayList<Cart> cartitem=new ArrayList<Cart>();
 		    	
- //session.setAttribute("mycart");
+session.setAttribute("mycart", authority);
 		    	 
 		    	
  break;

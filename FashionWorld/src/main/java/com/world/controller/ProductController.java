@@ -89,7 +89,7 @@ pdao.addProduct(prdt);
 
 
 		
-String path="C:\\Users\\Vikram-pc\\pro\\FashionWorld\\src\\main\\webapp\\resources\\images\\";
+String path="C:\\Users\\Vikram-pc\\New folder\\FashionWorld\\src\\main\\webapp\\resources\\images\\";
 		
 path=path+String.valueOf(prdt.getPid())+".jpg";
 		

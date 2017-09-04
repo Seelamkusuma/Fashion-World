@@ -18,7 +18,7 @@ public class Register
 	
 
 
-//@Column(columnDefinition="varchar(30)" )
+@Column(columnDefinition="varchar(30)" )
 
 @Id
 private String username;

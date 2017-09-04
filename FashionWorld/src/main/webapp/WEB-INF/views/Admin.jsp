@@ -11,7 +11,10 @@
  <h1> <a href ="AddProduct">AddProduct</a> </h1>
           <h1><a href ="ViewProduct">ViewProduct</a> </h1> <html>
           <h1><a href ="FullProduct">FullProduct</a> </h1> <html>
-          
+          <h1><a href ="AddCategory">AddCategory</a> </h1> <html>
+          <h1><a href ="ViewCategory">ViewCategory</a> </h1> <html>
+          <h1><a href ="AddSupplier">AddSupplier</a> </h1> <html>
+          <h1><a href ="ViewSupplier">ViewSupplier</a> </h1> <html>
           </html>
          </div>
 </body>

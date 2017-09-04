@@ -23,10 +23,10 @@
 <form:form action="AddProduct" method="post" modelAttribute="prdt" enctype="multipart/form-data" >
 
 			<table style="width: 50%">
-			<tr>
+			<%-- <tr>
 					<td>Product ID</td>
 					<td><form:input type="text" path="pid" /></td>
-				</tr>
+				</tr> --%>
 				<tr>
 					<td>Product Name</td>
 					<td><form:input type="text" path="pname" /></td>
