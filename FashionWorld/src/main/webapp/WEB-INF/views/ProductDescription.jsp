@@ -1,7 +1,7 @@
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
-
+<title>Product Description</title>
 <script>
 	var prod = ${list1};
 	angular.module('addtocart', []).controller('ProductController',function($scope) 
@@ -27,15 +27,15 @@
 		<table width="100%" bgcolor="#ffffff">
 		<tr>
 			<td align="center">
-			 	<img src="resources/{{Product.pid}}.jpg" style="width: 200px; height: 220px" alt="error" height="300" width="300"/>
+			 	<img src="resources/images/{{Product.pid}}.jpg" style="width: 200px; height: 220px" alt="error" height="300" width="300"/>
 			</td>
 			<td>
-				<h2 align="center""color:black"><B><font color="#ffffff">Product Description</font></B></h2>
+				<h2 align="center""color:black"><B><font color="black">Product Description</font></B></h2>
 				<br/>
-				<p class="caption"><p><font color="#ffffff">Product Name:{{Product.pname}}</font></p></p>
-				<p class="caption"><p><font color="#ffffff">Product Available:{{Product.pquan}}</font></p></p>
-				<p class="caption"><p><font color="#ffffff">Price:Rs.{{Product.pcost}}/-</font></p></p>
-				<p class="caption"><p><font color="#ffffff">Product Description:{{Product.pdesc}}</font></p></p>
+				<p class="caption"><p><font color="black">Product Name:{{Product.pname}}</font></p></p>
+				<p class="caption"><p><font color="black">Product Available:{{Product.pquan}}</font></p></p>
+				<p class="caption"><p><font color="black">Price:Rs.{{Product.pcost}}/-</font></p></p>
+				<p class="caption"><p><font color="black">Product Description:{{Product.pdesc}}</font></p></p>
 			</td>
 		</tr>
 	
@@ -44,7 +44,7 @@
 			<td>
 			</br>
 			</br>
-			<a align="center" href="addcart?adpid={{Product.pid}}"><img height="40" width="150" src="resources/addtocart.jpg"/></a>
+			<a align="center" href="Cart?adpid={{Product.pid}}"><img height="70" width="150" src="resources/images/addtocart.jpg"/></a>
 			</td>
 			<td>
 			</br>
@@ -58,5 +58,3 @@
 	</form:form>	
 </div>
 
-
- 

@@ -220,29 +220,29 @@ return mv;
 	
 
 	
-//@RequestMapping(value="/AddToCart",method=RequestMethod.GET)
+/*@RequestMapping(value="/AddToCart",method=RequestMethod.GET)
 	
-/*public ModelAndView addtocart(@RequestParam("addpid")int pid,Model m)
+public ModelAndView addtocart(@RequestParam("addpid")int pid,Model m)
 	
 {
 		
 System.out.println("Hello");
 		
-//System.out.println(pid);
+System.out.println(pid);
 		
 Product p=pdao.showProduct(pid);
 }		
-/*Gson gson = new Gson();
+Gson gson = new Gson();
 		
 String list=gson.toJson(p);
 		
 m.addAttribute("list1",list);
 	   
-// ModelAndView mv=new ModelAndView("AddToCart","Product",new Product());
+ ModelAndView mv=new ModelAndView("AddToCart","Product",new Product());
 		
 return mv;
 		
-//	System.out.println(getdata());
+System.out.println(getdata());
 		
 	
 }*/

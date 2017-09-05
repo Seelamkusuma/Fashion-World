@@ -1,93 +1,45 @@
 package com.world.model;
-
-import javax.annotation.Generated;
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
-
-
-
+import javax.persistence.Transient;
 
 @Entity
-
 public class Register 
-
 {
-
 	
-
-
-@Column(columnDefinition="varchar(30)" )
-
-@Id
-private String username;
-
-@Column(columnDefinition="long(10)")
+@Id	
+String userid;
+@Column
+String name;
+@Column
 long mobno;
-
-@Column(columnDefinition="varchar(50)")
+@Column
 String email;
 
-
-@Column(columnDefinition="varchar(50)")
+@Column
 String addrs;
 
-
-@Column(columnDefinition="varchar(50)")
+@Transient
 String password;
 
-@Column(columnDefinition="varchar(50)")
-String confirmpassword;
 
 
-public String getConfirmpassword() {
-	return confirmpassword;
+public String getName() {
+	return name;
+}
+public void setName(String name) {
+	this.name = name;
 }
 
 
-public void setConfirmpassword(String confirmpassword) {
-	this.confirmpassword = confirmpassword;
+public String getUserid() {
+	return userid;
 }
 
 
-public String getUsername() {
-	return username;
-}
-
-
-public void setUsername(String username) {
-	this.username = username;
-}
-
-
-public long getMobno() {
-	return mobno;
-}
-
-
-public void setMobno(long mobno) {
-	this.mobno = mobno;
-}
-
-
-public String getEmail() {
-	return email;
-}
-
-
-public void setEmail(String email) {
-	this.email = email;
-}
-
-
-public String getAddrs() {
-	return addrs;
-}
-
-
-public void setAddrs(String addrs) {
-	this.addrs = addrs;
+public void setUserid(String userid) {
+	this.userid = userid;
 }
 
 
@@ -99,8 +51,28 @@ public String getPassword() {
 public void setPassword(String password) {
 	this.password = password;
 }
+
+
+public long getMobno() {
+	return mobno;
 }
 
+public void setMobno(long mobno) {
+	this.mobno = mobno;
+}
 
+public String getEmail() {
+	return email;
+}
+public void setEmail(String email) {
+	this.email = email;
+}
 
+public String getAddrs() {
+	return addrs;
+}
+public void setAddrs(String addrs) {
+	this.addrs = addrs;
+}
 
+}
